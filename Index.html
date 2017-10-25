@@ -23,14 +23,13 @@ console.log(`El area de un triangulo es: ${pruebaFuncion(B,H)}`)
 //--------------------------------------------------------
 
 
-const Pelicula = 'Thor Ragnarock'
-const edadMini = 13
-const nombreEfrain = 'Efrain'
-const edadEfrain = 26
-const nombreJose = 'José'
-const edadJose = 10
-const SiVieneAcompañado = true
-
+let Pelicula = 'Thor Ragnarock',
+ edadMini = 13,
+ nombreEfrain = 'Efrain',
+ edadEfrain = 26,
+ nombreJose = 'José',
+ edadJose = 10,
+ SiVieneAcompañado = true
 
 const puedeVerPelicula = (nombre, edad, SiVieneAcompañado) => {
 	if(edad >= edadMini){
@@ -40,5 +39,34 @@ const puedeVerPelicula = (nombre, edad, SiVieneAcompañado) => {
 	}
 	else{
 		alert(`${nombre} no puede pasar a ver la Pelicula ${Pelicula}`);
+	}
+}
+
+
+
+//**************************************************
+//Prueba con objetos
+
+
+let Pelicula =  {
+	nombre: 'ProyectoX',
+	em: 14
+}
+
+let Persona1 = {
+	nombre: 'Efrain',
+	edad: 26
+}
+
+let Persona2 = {
+	nombre: 'Daenerys',
+	edad: 13
+}
+
+const VerPelicula = (Pelicula,Persona) =>{
+	if(Persona.edad >= Pelicula.em){
+		alert(`${Persona.nombre} Puede ver la pelicula ${Pelicula.nombre}`)
+	}else{
+		alert(`${Persona.nombre} No Puede ver la pelicula ${Pelicula.nombre} por que es menor de edad`)
 	}
 }
