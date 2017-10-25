@@ -14,7 +14,31 @@ function calcularArea(B, H){
 console.log(`El area de un triangulo es: ${calcularArea(B,H)}`)
 
 
+let B = 5
+let H = 7
 
 let pruebaFuncion = (B,H) => B*H/2;
 console.log(`El area de un triangulo es: ${pruebaFuncion(B,H)}`)
 
+//--------------------------------------------------------
+
+
+const Pelicula = 'Thor Ragnarock'
+const edadMini = 13
+const nombreEfrain = 'Efrain'
+const edadEfrain = 26
+const nombreJose = 'José'
+const edadJose = 10
+const SiVieneAcompañado = true
+
+
+const puedeVerPelicula = (nombre, edad, SiVieneAcompañado) => {
+	if(edad >= edadMini){
+		alert(`${nombre} puede pasar a ver la Pelicula ${Pelicula}`);
+	}else if(SiVieneAcompañado){
+		alert(`${nombre} Pasara a ver la pelicual ${Pelicula} con su acompañante`);
+	}
+	else{
+		alert(`${nombre} no puede pasar a ver la Pelicula ${Pelicula}`);
+	}
+}
