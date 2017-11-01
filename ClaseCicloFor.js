@@ -28,3 +28,26 @@ function correr(){
 } 
 
 
+
+//--------------------------------------------------------------------
+//y el resultado del segundo es:${dado2}
+
+let dado1 = 0, anterior = 0, actual = 0;
+
+function tirar(){
+	const min = 1, max = 6;
+	return Math.round(Math.random() * (max-min) + min)
+}
+
+for(let j = 1; j <= 6; j++){
+	dado1 = tirar()
+	anterior += dado1
+	if (dado1 == trampa) {
+		console.log(`Trampa, numeros repetidos`)
+	} 
+    
+	console.log(`La cara ${j} del dado es: ${dado1}`)
+}
+
+
+
