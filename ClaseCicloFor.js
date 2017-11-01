@@ -1,5 +1,5 @@
+//const nombre = $('#nombre')
 const nombre = 'Efrain'
-
 const dias=[
 	'Lunes',
 	'Martes',
