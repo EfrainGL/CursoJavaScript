@@ -20,7 +20,7 @@ const Punto = {
 const p1 = Object.create(Punto)
 const p2 = Object.create(Punto) 
 
-p1.init(0,4)
+p1.init(0,4) 
 p2.init(3,0)
 
 
